@@ -8,22 +8,24 @@
 
 /* Begin PBXBuildFile section */
 		9D592DD720A24D5300C293D2 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D592DD620A24D5300C293D2 /* AppDelegate.swift */; };
-		9D592DD920A24D5300C293D2 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D592DD820A24D5300C293D2 /* ViewController.swift */; };
 		9D592DDC20A24D5300C293D2 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9D592DDA20A24D5300C293D2 /* Main.storyboard */; };
 		9D592DDF20A24D5300C293D2 /* Talkboy.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 9D592DDD20A24D5300C293D2 /* Talkboy.xcdatamodeld */; };
 		9D592DE120A24D5600C293D2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9D592DE020A24D5600C293D2 /* Assets.xcassets */; };
 		9D592DE420A24D5600C293D2 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9D592DE220A24D5600C293D2 /* LaunchScreen.storyboard */; };
+		9D592DF420A25C3D00C293D2 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D592DF320A25C3D00C293D2 /* ViewController.swift */; };
+		9D592DF620A25D1900C293D2 /* TableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D592DF520A25D1900C293D2 /* TableViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		9D592DD320A24D5300C293D2 /* Talkboy.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Talkboy.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9D592DD620A24D5300C293D2 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		9D592DD820A24D5300C293D2 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		9D592DDB20A24D5300C293D2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		9D592DDE20A24D5300C293D2 /* Talkboy.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Talkboy.xcdatamodel; sourceTree = "<group>"; };
 		9D592DE020A24D5600C293D2 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		9D592DE320A24D5600C293D2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		9D592DE520A24D5600C293D2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9D592DF320A25C3D00C293D2 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		9D592DF520A25D1900C293D2 /* TableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -57,7 +59,8 @@
 			isa = PBXGroup;
 			children = (
 				9D592DD620A24D5300C293D2 /* AppDelegate.swift */,
-				9D592DD820A24D5300C293D2 /* ViewController.swift */,
+				9D592DF520A25D1900C293D2 /* TableViewController.swift */,
+				9D592DF320A25C3D00C293D2 /* ViewController.swift */,
 				9D592DDA20A24D5300C293D2 /* Main.storyboard */,
 				9D592DE020A24D5600C293D2 /* Assets.xcassets */,
 				9D592DE220A24D5600C293D2 /* LaunchScreen.storyboard */,
@@ -139,8 +142,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				9D592DDF20A24D5300C293D2 /* Talkboy.xcdatamodeld in Sources */,
-				9D592DD920A24D5300C293D2 /* ViewController.swift in Sources */,
+				9D592DF420A25C3D00C293D2 /* ViewController.swift in Sources */,
 				9D592DD720A24D5300C293D2 /* AppDelegate.swift in Sources */,
+				9D592DF620A25D1900C293D2 /* TableViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
