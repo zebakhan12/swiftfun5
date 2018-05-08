@@ -59,7 +59,7 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="22"/>
                                 <state key="normal" title="Play"/>
                                 <connections>
-                                    <action selector="playbuttonTapped:" destination="59M-tk-h8g" eventType="touchUpInside" id="2XW-KV-N6T"/>
+                                    <action selector="playButtonTapped:" destination="59M-tk-h8g" eventType="touchUpInside" id="PyD-12-6UU"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" enabled="NO" highlighted="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6gq-pE-uDp">
@@ -79,7 +79,7 @@
                                 </connections>
                             </button>
                             <textField opaque="NO" contentMode="scaleToFill" enabled="NO" highlighted="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Sound Name" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="APt-8X-boa">
-                                <rect key="frame" x="20" y="212" width="335" height="30"/>
+                                <rect key="frame" x="40" y="212" width="295" height="30"/>
                                 <nil key="textColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
@@ -87,7 +87,7 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
-                            <constraint firstItem="APt-8X-boa" firstAttribute="leading" secondItem="UN6-RJ-AMu" secondAttribute="leading" constant="20" id="0y9-Lp-HIV"/>
+                            <constraint firstItem="APt-8X-boa" firstAttribute="leading" secondItem="UN6-RJ-AMu" secondAttribute="leading" constant="40" id="0y9-Lp-HIV"/>
                             <constraint firstItem="2em-bU-q1w" firstAttribute="top" secondItem="MU3-yH-Eiz" secondAttribute="bottom" constant="10" id="6ag-sR-5BB"/>
                             <constraint firstItem="MU3-yH-Eiz" firstAttribute="centerX" secondItem="b8W-pH-Krh" secondAttribute="centerX" id="BdD-Ay-acu"/>
                             <constraint firstItem="6gq-pE-uDp" firstAttribute="centerX" secondItem="b8W-pH-Krh" secondAttribute="centerX" id="Cbg-wG-EbA"/>
@@ -96,7 +96,7 @@
                             <constraint firstItem="6gq-pE-uDp" firstAttribute="top" secondItem="APt-8X-boa" secondAttribute="bottom" constant="20" id="uLO-u2-J9z"/>
                             <constraint firstItem="2em-bU-q1w" firstAttribute="centerX" secondItem="b8W-pH-Krh" secondAttribute="centerX" id="vC4-1a-fOq"/>
                             <constraint firstItem="APt-8X-boa" firstAttribute="top" secondItem="2em-bU-q1w" secondAttribute="bottom" constant="10" id="vz8-RK-AhZ"/>
-                            <constraint firstItem="UN6-RJ-AMu" firstAttribute="trailing" secondItem="APt-8X-boa" secondAttribute="trailing" constant="20" id="vzp-Co-0Wr"/>
+                            <constraint firstItem="UN6-RJ-AMu" firstAttribute="trailing" secondItem="APt-8X-boa" secondAttribute="trailing" constant="40" id="vzp-Co-0Wr"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="UN6-RJ-AMu"/>
                     </view>
