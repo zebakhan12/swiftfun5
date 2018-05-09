@@ -23,6 +23,9 @@ class ViewController: UIViewController {
     @IBOutlet weak var addTextField: UIButton!
     
     var audioRecorder : AVAudioRecorder?
+    var audioPlayer : AVAudioPlayer?
+    var audioURL : URL?
+    
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -39,6 +42,7 @@ class ViewController: UIViewController {
             let pathComponents = [basePath, "audio.m4a"]
             //merge to create audio URL
             if let audioURL = NSURL.fileURL(withPathComponents: pathComponents) {
+                self.audioURL = audioURL
                 
                 //3. create a dictionary of settings
                 
@@ -54,6 +58,9 @@ class ViewController: UIViewController {
                 
             }
         }
+        playTextField.isEnabled = false
+        titleTextField.isEnabled = false
+        addTextField.isEnabled = false
     }
     
     @IBAction func recordButtonTapped(_ sender: Any) {
@@ -62,15 +69,24 @@ class ViewController: UIViewController {
             if audioRecorder.isRecording {
                 audioRecorder.stop()
                 recordTextField.setTitle("Record", for: .normal)
+                playTextField.isEnabled = true
+                titleTextField.isEnabled = true
+                addTextField.isEnabled = true
             } else {
-            audioRecorder.record()
-            recordTextField.setTitle("Stop", for: .normal)
+                audioRecorder.record()
+                recordTextField.setTitle("Stop", for: .normal)
+                playTextField.isEnabled = false
+                titleTextField.isEnabled = false
+                addTextField.isEnabled = false
             }
         }
     }
     
     @IBAction func playButtonTapped(_ sender: Any) {
-        
+        if let audioURL = self.audioURL {
+            audioPlayer = try? AVAudioPlayer(contentsOf: audioURL)
+            audioPlayer?.play()
+        }
     }
     
     @IBAction func addButtonTapped(_ sender: Any) {
