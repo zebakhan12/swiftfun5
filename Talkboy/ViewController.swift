@@ -2,7 +2,7 @@
 //  ViewController.swift
 //  Talkboy
 //
-//  Created by Zeba Hashimi on 5/8/18.
+//  Created by Zeba Khan on 5/8/18.
 //  Copyright © 2018 Zeba Khan. All rights reserved.
 //
 
@@ -98,8 +98,11 @@ class ViewController: UIViewController {
             if let audioURL = self.audioURL {
                 try? sound.audioData = Data(contentsOf: audioURL)
                 try? context.save()
+                navigationController?.popViewController(animated: true)
             }
         }
     }
     
 }
+
+//pull sound objects from core data and put them in an array and have them show up in a table view. Just get the list of names of audio files.
