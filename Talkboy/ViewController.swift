@@ -40,21 +40,37 @@ class ViewController: UIViewController {
             //merge to create audio URL
             if let audioURL = NSURL.fileURL(withPathComponents: pathComponents) {
                 
-                //3. create some settings
+                //3. create a dictionary of settings
+                
+                var settings : [String:Any] = [:]
+                settings[AVFormatIDKey] = Int(kAudioFormatMPEG4AAC)
+                settings[AVSampleRateKey] = 44100.0
+                settings[AVNumberOfChannelsKey] = 2
                 
                 //4. create audio recorder
                 
-                audioRecorder = AVAudioRecorder(url: audioURL, settings: <#T##[String : Any]#>)
+                audioRecorder = try? AVAudioRecorder(url: audioURL, settings: settings)
                 audioRecorder?.prepareToRecord()
-            
+                
             }
         }
     }
     
     @IBAction func recordButtonTapped(_ sender: Any) {
+        
+        if let audioRecorder = self.audioRecorder{
+            if audioRecorder.isRecording {
+                audioRecorder.stop()
+                recordTextField.setTitle("Record", for: .normal)
+            } else {
+            audioRecorder.record()
+            recordTextField.setTitle("Stop", for: .normal)
+            }
+        }
     }
     
     @IBAction func playButtonTapped(_ sender: Any) {
+        
     }
     
     @IBAction func addButtonTapped(_ sender: Any) {
