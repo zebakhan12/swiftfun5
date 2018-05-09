@@ -90,6 +90,16 @@ class ViewController: UIViewController {
     }
     
     @IBAction func addButtonTapped(_ sender: Any) {
+       //saving file name and audio file into core data
+        //adding context and file path
+        if let context = (UIApplication.shared.delegate as? AppDelegate)?.persistentContainer.viewContext{
+            let sound = Sound(entity: Sound.entity(), insertInto: context)
+            sound.name = titleTextField.text
+            if let audioURL = self.audioURL {
+                try? sound.audioData = Data(contentsOf: audioURL)
+                try? context.save()
+            }
+        }
     }
     
 }
